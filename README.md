@@ -18,3 +18,14 @@ docker build -t welcome-to-docker .
 docker run -d -p 8088:3000 --name welcome-to-docker welcome-to-docker
 ```
 Open `http://localhost:8088` in your browser.
+
+# Mulltiple port 
+The same image has to run on different port then 
+Build and run:
+
+```
+!docker run -d -p 8089:3000  welcome-to-docker
+!docker run -d -p 8090:3000  welcome-to-docker
+```
+
+Open `http://localhost:8089 or http://localhost:8090` in your browser.
